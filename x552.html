@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>SNOLAN X-552 ULTRA CARBON</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="NOLAN_X-552_Ultra_puro_02.webp" alt="SNOLAN X-552 ULTRA CARBON Helmet">
+    </div>
+    <div class="container3">
+        <div class="header">
+            <h1>SNOLAN X-552 ULTRA CARBON Helmet</h1>
+            <p>Experience superior protection and comfort with the SNOLAN X-552 ULTRA CARBON helmet, designed for the discerning rider.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱27,500</li>
+                <li><strong>Make:</strong> SNOLAN</li>
+                <li><strong>Model:</strong> X-552 ULTRA CARBON</li>
+                <li><strong>Certification:</strong> ECE 22.05</li>
+                <li><strong>Shell Material:</strong> Ultra Carbon Fiber</li>
+                <li><strong>Visor Type:</strong> Anti-scratch, Anti-fog</li>
+                <li><strong>Weight:</strong> 1,250 grams</li>
+                <li><strong>Ventilation:</strong> Advanced Airflow System</li>
+                <li><strong>Padding:</strong> Removable, washable, hypoallergenic</li>
+                <li><strong>Sizes Available:</strong> S, M, L, XL</li>
+                <li><strong>Chin Strap:</strong> Double-D Ring</li>
+                <li><strong>Safety Features:</strong> Multi-layer EPS Foam, Reinforced Chin Bar</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Helmet St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="helmetpage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

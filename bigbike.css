@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: #333;
+}
+
+.motorcycle-container {
+    border: 3px solid #1E2022;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    margin: 15px auto;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.motorcycle-container:hover {
+    border-color: #52616B;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.motorcycle-img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.motorcycle-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.motorcycle-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E2022;
+    margin-bottom: 10px;
+}
+
+.motorcycle-details {
+    font-size: 16px;
+    color: #52616B;
+    margin-top: 5px;
+}
+
+.motorcycle-details.editable {
+    outline: 1px dashed #1E2022;
+    padding: 5px;
+    cursor: text;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+}
+
+.row {
+    flex: 1;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+/* Button styles */
+.previous,
+.next {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px; 
+    font-size: 18px; 
+    font-weight: bold;
+    color: white; 
+    background-color: #333; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease; 
+    margin: 0 10px; 
+}
+
+.previous:hover,
+.next:hover {
+    background-color: #555; 
+}
+
+.motorcycle-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}

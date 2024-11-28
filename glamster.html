@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>SHOEI GLAMSTER FULL FACE HELMET</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="ShoeiGlamsterWhite_01.webp" alt="SHOEI Glamster Full Face Helmet">
+    </div>
+    <div class="container3">
+        <div class="header">
+            <h1>SHOEI GLAMSTER FULL FACE HELMET</h1>
+            <p>Protect your head with the sleek, durable SHOEI Glamster full-face helmet.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱32,000</li>
+                <li><strong>Brand:</strong> SHOEI</li>
+                <li><strong>Model:</strong> Glamster Full Face</li>
+                <li><strong>Size:</strong> M, L, XL</li>
+                <li><strong>Weight:</strong> 1.45 kg</li>
+                <li><strong>Shell Material:</strong> Multi-composite fiber</li>
+                <li><strong>Visor:</strong> Clear, scratch-resistant visor with UV protection</li>
+                <li><strong>Certification:</strong> DOT, ECE R22-05</li>
+                <li><strong>Color Options:</strong> Matte Black, Gloss White, Red</li>
+                <li><strong>Ventilation:</strong> Multi-directional airflow system</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Helmet Shop St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="helmetpage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

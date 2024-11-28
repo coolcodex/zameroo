@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>AGV K3SV Helmet</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="k3sv.webp" alt="AGV K3SV ASIA FULL FACE HELMET">
+    </div>
+    <br>
+    <br>
+
+    <div class="container3">
+        <div class="header">
+            <h1>AGV K3SV ASIA FULL FACE HELMET</h1>
+            <p>Safety, comfort, and style come together with the AGV K3SV Full Face Helmet.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱9,500</li>
+                <li><strong>Make:</strong> AGV</li>
+                <li><strong>Model:</strong> K3SV ASIA</li>
+                <li><strong>Type:</strong> Full Face Helmet</li>
+                <li><strong>Material:</strong> Composite fiber</li>
+                <li><strong>Visor Type:</strong> Clear, Anti-scratch</li>
+                <li><strong>Ventilation:</strong> Multiple vents for improved airflow</li>
+                <li><strong>Weight:</strong> 1,450 grams (approx.)</li>
+                <li><strong>Safety Rating:</strong> ECE 22.05</li>
+                <li><strong>Interior:</strong> Removable and washable lining</li>
+                <li><strong>Compatibility:</strong> AGV specific accessories</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Helmet St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="helmetpage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>Kawasaki Ninja H2 Carbon</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="ninjah2carbon.jpg" alt="Kawasaki Ninja H2 Carbon">
+    </div>
+    <br>
+    <br>
+    <div class="container3">
+        <div class="header">
+            <h1>Kawasaki Ninja H2 Carbon</h1>
+            <p>Unleash the ultimate power and performance with the Kawasaki Ninja H2 Carbon.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱1,800,000</li>
+                <li><strong>Make:</strong> Kawasaki</li>
+                <li><strong>Model:</strong> Ninja H2 Carbon</li>
+                <li><strong>Registration Date:</strong> 2024</li>
+                <li><strong>Transmission:</strong> Manual</li>
+                <li><strong>Transmission Type:</strong> 6-Speed Dog-Ring</li>
+                <li><strong>Ignition Type:</strong> Digital</li>
+                <li><strong>Bore x Stroke (mm):</strong> 76.0 mm x 55.0 mm</li>
+                <li><strong>Engine Type:</strong> Supercharged, Liquid-cooled, Inline-four</li>
+                <li><strong>Displacement (cc):</strong> 998 cc</li>
+                <li><strong>Maximum Horse Power:</strong> 231 PS @ 11,500 rpm</li>
+                <li><strong>Maximum Torque:</strong> 141.7 Nm @ 11,000 rpm</li>
+                <li><strong>Fuel System:</strong> Fuel Injection with Dual Injection</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Bike St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="bigbikepage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

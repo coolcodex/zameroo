@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>Yamaha Tracer 9 GT</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="tracer-9gt.jpg" alt="Yamaha Tracer 9 GT">
+    </div>
+    <br>
+    <br>
+    <div class="container3">
+        <div class="header">
+            <h1>Yamaha Tracer 9 GT</h1>
+            <p>Discover the ultimate balance of performance, comfort, and versatility with the Yamaha Tracer 9 GT.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱879,000</li>
+                <li><strong>Make:</strong> Yamaha</li>
+                <li><strong>Model:</strong> Tracer 9 GT</li>
+                <li><strong>Registration date:</strong> 2024</li>
+                <li><strong>Transmission:</strong> Manual</li>
+                <li><strong>Transmission Type:</strong> 6-Speed</li>
+                <li><strong>Ignition Type:</strong> TCI (Transistor Controlled Ignition)</li>
+                <li><strong>Bore x Stroke (mm):</strong> 78.0 mm x 62.1 mm</li>
+                <li><strong>Engine Type:</strong> Liquid-cooled, 4-stroke, DOHC, 3-cylinder</li>
+                <li><strong>Displacement (cc):</strong> 890 cc</li>
+                <li><strong>Maximum Horse Power:</strong> 85.0 kW @ 10,000 rpm</li>
+                <li><strong>Maximum Torque:</strong> 93 Nm @ 7,000 rpm</li>
+                <li><strong>Fuel System:</strong> Fuel injected</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Bike St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="bigbikepage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

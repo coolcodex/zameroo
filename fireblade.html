@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>Honda CBR1000RR-R FIREBLADE SP</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="fireblade.jpg" alt="HONDA CBR1000RR-R FIREBLADE SP">
+    </div>
+    <div class="container3">
+        <div class="header">
+            <h1>HONDA CBR1000RR-R FIREBLADE SP</h1>
+            <p>Unleash the power of the track with the ultimate superbike, the Honda CBR1000RR-R Fireblade SP.</p>
+        </div>
+        <br>
+    <br>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱1,600,000</li>
+                <li><strong>Make:</strong> Honda</li>
+                <li><strong>Model:</strong> CBR1000RR-R FIREBLADE SP</li>
+                <li><strong>Registration Date:</strong> 2024</li>
+                <li><strong>Transmission:</strong> Manual</li>
+                <li><strong>Transmission Type:</strong> 6-Speed</li>
+                <li><strong>Ignition Type:</strong> Full Digital Ignition</li>
+                <li><strong>Bore x Stroke (mm):</strong> 81.0 mm x 48.5 mm</li>
+                <li><strong>Engine Type:</strong> Four-stroke, Liquid-cooled, DOHC Inline Four</li>
+                <li><strong>Displacement (cc):</strong> 999.9 cc</li>
+                <li><strong>Maximum Horse Power:</strong> 160 kW @ 14,500 rpm</li>
+                <li><strong>Maximum Torque:</strong> 113 Nm @ 12,500 rpm</li>
+                <li><strong>Fuel System:</strong> Programmed Fuel Injection (PGM-FI)</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Bike St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="bigbikepage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

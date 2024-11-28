@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar2.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+    <script>
+        function login() {
+            window.location.href = "homepage.html";
+        }
+        
+        function togglePassword() {
+            var passwordField = document.getElementById('password');
+            var showPasswordCheckbox = document.getElementById('showPassword');
+            
+            if (showPasswordCheckbox.checked) {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="right"><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <form onsubmit="event.preventDefault(); login();">
+        <h1>Login</h1>
+        <label for="username">Username:</label><br>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="Enter your username" 
+            required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <div class="password-wrapper">
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password" 
+                required>
+            <input type="checkbox" id="showPassword" onclick="togglePassword()">
+            <label for="showPassword">Show</label>
+        </div>
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

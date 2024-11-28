@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <link rel="stylesheet" href="all-motor.css">
+    <link rel="stylesheet" href="buybutton.css">
+    <title>Kawasaki Z1000R</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="z1000r.jpg" alt="Kawasaki Z1000R">
+    </div>
+    <br>
+    <br>
+    <div class="container3">
+        <div class="header">
+            <h1>Kawasaki Z1000R</h1>
+            <p>Unleash your inner thrill-seeker with the dynamic Kawasaki Z1000R.</p>
+        </div>
+        <div class="specs-container">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>SRP:</strong> ₱800,000</li>
+                <li><strong>Make:</strong> Kawasaki</li>
+                <li><strong>Model:</strong> Kawasaki Z1000R</li>
+                <li><strong>Registration date:</strong> 2024</li>
+                <li><strong>Transmission:</strong> Manual</li>
+                <li><strong>Transmission Type:</strong> 6-Speed</li>
+                <li><strong>Ignition Type:</strong> Digital</li>
+                <li><strong>Bore x Stroke (mm):</strong> 77.0 mm x 56.0 mm</li>
+                <li><strong>Engine Type:</strong> Liquid-cooled, 4-stroke In-line four</li>
+                <li><strong>Displacement (cc):</strong> 1,043 cc</li>
+                <li><strong>Maximum Horse Power:</strong> 104.5 kW @ 10,000 rpm</li>
+                <li><strong>Maximum Torque:</strong> 111 Nm @ 7,300 rpm</li>
+                <li><strong>Fuel System:</strong> Fuel Injected</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button onclick="openPopup()">Buy Now</button>
+    </div>
+
+    <div id="orderPopup" class="popup">
+        <div class="popup-content">
+            <h2>Order Information</h2>
+            <p>To order, please call our customer service or visit our nearest branch.</p>
+            <p><strong>Contact Number:</strong> +63 912 345 6789</p>
+            <p><strong>Branch Address:</strong> 123 Bike St., Quezon City</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("orderPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("orderPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="button-container">
+        <a href="bigbikepage.html" class="previous">Go Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar2.css">
+    <title>Contact Us</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafc;
+        color: #333;
+    }
+
+    h1, h2 {
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-info {
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h1 {
+        text-align: center;
+        font-size: 2.2em;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .contact-info h2 {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    form label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .success-message {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .contact-info {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            font-size: 12px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="right"><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to get in touch, please feel free to reach out to us using the details below.</p>
+
+        <h2>Phone</h2>
+        <p>+63 912 345 6789</p>
+
+        <h2>Email</h2>
+        <p>marzonzamora@gmail.com</p>
+        <p>harveyvivero1@gmail.com</p>
+
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media!</p>
+        <h1>Facebook</h1>
+        <p><a href="https://web.facebook.com/marzon.zamora.7" target="_blank">Marzon Dadia Zamora</a></p>
+        <p><a href="https://web.facebook.com/louharvey.vivero.1" target="_blank">Lou Vivero</a></p>
+        <h1>Instagram</h1>
+        <p><a href="https://www.instagram.com/mrzons_/" target="_blank">mrzons_</a></p>
+        <p><a href="https://www.instagram.com/louu_644/" target="_blank">lou_644</a></p>
+
+        <h2>Contact Form</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="success-message" class="success-message">
+            Your message has been successfully submitted. Thank you!
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('success-message').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
