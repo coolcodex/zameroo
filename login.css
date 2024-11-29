@@ -2,11 +2,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F0F5F9;
     display: flex;
+    color: white;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url('loginback.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
+
 label {
     text-align: left;
     display: block;  
@@ -16,7 +23,7 @@ label {
 }
 
 form {
-    background-color: #C9D6DF;
+    background-color: #61707790;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -93,8 +100,20 @@ label[for="showPassword"] {
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
-    .column {
-        width: 100%;
-    }
+
+.title-wrapper {
+    width: 100%; 
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
+
+.title-wrapper h1 {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #52616B;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0; 
+}
+
+
