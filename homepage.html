@@ -218,30 +218,30 @@
     
     
 
-    <script>
-        function initSlideshow(slideshowId) {
-            let slideIndex = 0;
-            const slides = document.querySelectorAll(`#${slideshowId} .slides`);
-            const totalSlides = slides.length;
-        
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.style.display = i === index ? "block" : "none";
-                });
-            }
-        
-            function nextSlide() {
-                slideIndex = (slideIndex + 1) % totalSlides;
-                showSlide(slideIndex);
-            }
-        
-            showSlide(slideIndex);
-            setInterval(nextSlide, 3000); 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function initSlideshow(slideshowId) {
+        let $slides = $(`#${slideshowId} .slides`);
+        let slideIndex = 0;
+        const totalSlides = $slides.length;
+
+        function showSlide(index) {
+            $slides.hide().eq(index).fadeIn();
         }
-        
-        
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        showSlide(slideIndex);
+        setInterval(nextSlide, 3000); 
+    }
+
+    $(document).ready(function () {
         initSlideshow("slideshow1");
         initSlideshow("slideshow2");
-        </script>
+    });
+</script>
 </body>
 </html>
