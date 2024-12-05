@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Norwester', Arial, sans-serif;
     background-color: #F0F5F9;
     display: flex;
     color: white;
@@ -20,6 +20,7 @@ label {
     margin-bottom: 0;
     padding-bottom: 0; 
     font-size: 14px; 
+    font-family: 'Norwester', sans-serif;
 }
 
 form {
@@ -28,6 +29,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    font-family: 'Norwester', sans-serif;
 }
 
 input {
@@ -38,12 +40,12 @@ input {
     border-radius: 5px;
     text-align: left;
     box-sizing: border-box;
+    font-family: 'Norwester', sans-serif;
 }
 
 input::placeholder {
     color: #888; 
 }
-
 
 button {
     background-color: #52616B;
@@ -54,6 +56,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: 'Norwester', sans-serif;
 }
 
 button:hover {
@@ -70,9 +73,9 @@ button:hover {
         width: 90%;
     }
 }
+
 .password-wrapper {
     position: relative;
-    
 }
 
 #password {
@@ -100,12 +103,12 @@ label[for="showPassword"] {
     font-size: 14px;
 }
 
-
 .title-wrapper {
     width: 100%; 
     text-align: center;
     margin-top: 20px; 
     margin-bottom: 20px; 
+    font-family: 'Norwester', sans-serif;
 }
 
 .title-wrapper h1 {
@@ -114,6 +117,5 @@ label[for="showPassword"] {
     color: #52616B;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin: 0; 
+    font-family: 'Norwester', sans-serif;
 }
-
-

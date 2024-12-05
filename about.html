@@ -2,102 +2,264 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar2.css">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <style>
-         .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            margin-top: 30px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        body {
+    font-family: 'Norwester', sans-serif; /* Apply Norwester font to the whole body */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e9ecef, #ffffff);
+    color: #333;
+}
 
-        h1, h2 {
-            color: #333;
-        }
+/* Content Section Styling */
+.content {
+    padding: 50px;
+    max-width: 900px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+}
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #3a8edb;
+    letter-spacing: 1px;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for h1 */
+}
 
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
-            color: #444;
-        }
+h2 {
+    font-size: 2.2em;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #555;
+    border-bottom: 3px solid #eee;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for h2 */
+}
 
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for p */
+}
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+/* Team Section Styling */
+.team-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 
-        ul li {
-            margin-bottom: 10px;
-        }
+.team-member {
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
 
-        .top-images {
-            display: flex;
-            justify-content: center;
-            margin-top: 150px;
-            border-radius: 8px;
-        }
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
 
-        .top-images img {
-            width: 300px;
-            height: 300px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border: 10px solid #333;
-        }
-        .top-images figcaption {
-            font-size: 1.2em;
-            color: #333;
-            font-weight: bold;
-        }
+.team-member h3 {
+    margin-bottom: 10px;
+    color: #3a8edb;
+    font-size: 1.6em;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for h3 */
+}
 
+.team-member p {
+    font-size: 1.1em;
+    color: #666;
+    margin: 0;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for team member p */
+}
 
-    </style>
+/* FAQ Section Styling */
+.faq-section {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.faq {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+    font-size: 1.4em;
+    color: #444;
+    margin-bottom: 10px;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for FAQ h3 */
+}
+
+.faq p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for FAQ p */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .team-section {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1E2022;
+    color: white;
+    padding: 4% 30px;
+    font-family: 'Norwester', sans-serif; /* Apply Norwester to footer */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for footer h3 */
+}
+
+.footer-column p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for footer p */
+    color: #f1f1f1;
+}
+
+.footer-bottom {
+    background-color: #52616B;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    font-family: 'Norwester', sans-serif; /* Ensuring Norwester for footer bottom p */
+    color: #f1f1f1;
+}
+
+/* Editable Class */
+.editable {
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
     </style>
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a class="active" href="about.html">About</a></li>
+            <li class="right"><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <div class="top-images">
-        <figure>
-            <img src="vivero.jpg" alt="Developer 1">
-            <figcaption>Lou Vivero</figcaption>
-        </figure>
-        <figure>
-            <img src="marzon.jpg" alt="Developer 2">
-            <figcaption>Marzon Zamora</figcaption>
-        </figure>
-    </div>
-
     <div class="content">
         <h1>About Us</h1>
-<p>Welcome to our motor website! We are a committed group of automotive enthusiasts committed to providing you with the most up-to-date information, opinions, and analysis on anything related to motorsports. Our goal is to increase your enthusiasm for motorcycles by giving you accurate information and engaging material.</p>
+        <p>Welcome to our motor website! We are a dedicated team of automotive enthusiasts passionate about delivering accurate and engaging content on all things related to motorsports and motorcycles. Our commitment is to provide you with the most current information and insights in the world of motorsports.</p>
 
-<h2>Our Mission</h2>
-<p>Our mission is to deliver top-quality automotive content and services, focusing on your interests in motorcycles, and the motorsports world. We strive to keep you informed with the most accurate and up-to-date information available.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to deliver top-quality automotive content and services. We focus on keeping you informed and engaged with the latest developments in motorcycles and the broader motorsports community.</p>
 
-<h2>Our Vision</h2>
-<p>We aim to be a leading online destination for motor enthusiasts, known for our dedication to innovation, excellence, and a love for all things automotive.</p>
+        <h2>Our Vision</h2>
+        <p>We aspire to be a leading online platform for motor enthusiasts, recognized for our innovation, excellence, and passion for all things automotive.</p>
 
+        <h2>Core Values</h2>
+        <ul>
+            <li><strong>Integrity:</strong> We ensure our content is honest, accurate, and unbiased.</li>
+            <li><strong>Innovation:</strong> We embrace creativity to deliver cutting-edge insights.</li>
+            <li><strong>Community:</strong> We strive to build a strong connection with motor enthusiasts worldwide.</li>
+        </ul>
+
+        <h2>Meet Our Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <h3>Lou Vivero</h3>
+                <p>Lou is the one who makes the homepage, navbar, slideshow, big bike page, and helmet page. He also finds images and information about the specs of motors or helmets.</p>
+            </div>
+            <div class="team-member">
+                <h3>Marzon Zamora</h3>
+                <p>Marzon is the one who makes the scooter page, about page, contact page, and login page. He also helps to find images and information about motors or helmets.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-section">
+            <div class="faq">
+                <h3>Who is this website for?</h3>
+                <p>This website is designed for anyone passionate about motorcycles, whether you’re a casual rider, a motorsports enthusiast, or a gearhead looking for the latest news and reviews.</p>
+            </div>
+            <div class="faq">
+                <h3>What kind of content can I expect?</h3>
+                <p>We offer in-depth reviews, guides, and the latest news on motorcycles, motorsports, and accessories to keep you informed and entertained.</p>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p class="editable">We are a premier online shop specializing in big bikes, scooters, and helmets.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p class="editable">Email: zameroshop@gmail.com</p>
+                <p class="editable">Phone: +63 912 345 6789</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p class="editable">Stay connected on social media!</p>
+                <p class="editable">Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="editable">&copy; 2024 Zamero Shop. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

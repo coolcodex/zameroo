@@ -219,5 +219,61 @@ p {
 }
 
 
+footer {
+    background-color: #1E2022;
+    color: white;
+    padding: 4% 30px;
+    font-family: Norwester;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    background-color: #52616B;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+
+.editable {
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
 
 

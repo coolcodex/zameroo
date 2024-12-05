@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike and Helmet Options</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #52616B, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column; /* Stack options vertically */
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            padding: 20px 40px;
+            background-color: #52616B;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none; /* Remove underline */
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #3b6d8e;
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        a:active {
+            background-color: #334F68;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Product Category</h1>
+    <div class="options-container">
+        <a href="bigbikepage.html">Bigbike</a>
+        <a href="scooter.html">Scooter</a>
+        <a href="helmetpage.html">Helmet</a>
+    </div>
+</body>
+</html>
