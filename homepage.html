@@ -12,12 +12,17 @@
 <body>
 
     <ul>
+        <div class="logo">
+            <h1><a href="homepage.html">Zamero Shop</a></h1>
+        </div>
         <li><a href="homepage.html">Home</a></li>
-        <li><a href="prodcat.html">Product Category</a></li>
+        <li><a href="prodcat.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
         <li><a class="active" href="index.html">Login</a></li>
-        <h1 style="color: white; text-align: center; margin-top: 15px; font-family: 'Norwester', sans-serif;">Zamero Shop</h1>
+        <div class="logo">
+            <h1><a href="homepage.html">Zamero Shop</a></h1>
+        </div>
     </ul>
     <br>
     <br>
@@ -41,7 +46,7 @@
             <img src="trooper_slider_banner.webp" alt="Slideshow Image 4" class="slideshow">
         </div>
     </div>
-    <p class="slanted-border"> Discover a Wide Variety of Big Bikes Tailored for Every Rider! </p>
+    <p class="slanted-border"> Explore Big Bikes for Every Rider! </p>
 
 
 
@@ -114,7 +119,7 @@
         </div>
     </div>
 
-    <p class="slanted-border"> Explore Our Wide Range of Scooters, Perfect for Every Rider! </p>
+    <p class="slanted-border"> Discover the Perfect Scooter for Every Rider! </p>
 
     <div class="row">
         <div class="column">
@@ -169,7 +174,7 @@
         </div>
     </div>
 
-    <p class="slanted-border"> Explore Our Wide Range of Helmets, Perfect for Every Rider! </p>
+    <p class="slanted-border"> Find Your Ideal Helmet, Designed for Every Rider! </p>
 
 <div class="row">
     <div class="column">
@@ -243,15 +248,15 @@
     
     
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     function initSlideshow(slideshowId) {
-        let $slides = $(`#${slideshowId} .slides`);
+        let slides = document.querySelectorAll(`#${slideshowId} .slides`);
         let slideIndex = 0;
-        const totalSlides = $slides.length;
+        const totalSlides = slides.length;
 
         function showSlide(index) {
-            $slides.hide().eq(index).fadeIn();
+            slides.forEach(slide => slide.style.display = 'none'); // Hide all slides
+            slides[index].style.display = 'block'; // Show the selected slide
         }
 
         function nextSlide() {
@@ -259,11 +264,12 @@
             showSlide(slideIndex);
         }
 
-        showSlide(slideIndex);
-        setInterval(nextSlide, 3000); 
+        slides.forEach(slide => slide.style.display = 'none'); // Hide all slides initially
+        showSlide(slideIndex); // Show the first slide
+        setInterval(nextSlide, 6000); // Increase timer to 6 seconds
     }
 
-    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         initSlideshow("slideshow1");
         initSlideshow("slideshow2");
     });

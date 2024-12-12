@@ -9,6 +9,8 @@ ul {
     width: 100%;
     height: 66px;
     z-index: 1000;
+    display: flex;
+    align-items: center; /* Vertically center items */
 }
 
 body {
@@ -16,8 +18,24 @@ body {
     margin: 0;
 }
 
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Norwester', sans-serif;
+    margin: 0; /* Remove default margin */
+    font-size: 32px; /* Increase font size */
+    padding: 0px 110px 0px 155px; /* Add padding to expand height */
+    letter-spacing: 1px; /* Add letter spacing to make it appear longer */
+}
+
+.logo {
+    margin-left: 15px; /* Adjust spacing from the left edge */
+}
+
+
 li {
-    float: left;
+    float: none; /* Clear float to use flex */
+    display: inline-block;
 }
 
 li:last-child {
@@ -29,13 +47,13 @@ li a {
     background-color: #52616B;
     text-align: center;
     color: white;
-    padding: 25px 60px 30px 60px;
+    padding: 25px 35px 30px 20px; /* Adjust padding for better fit */
     text-decoration: none;
     font-family: Norwester;
 }
 
 li.right {
-    float: right;
+    margin-left: auto; /* Use flexbox for alignment */
 }
 
 li a:hover {
@@ -82,5 +100,20 @@ a {
 @media screen and (max-width: 768px) {
     .column {
         width: 100%;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li a {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
     }
 }
