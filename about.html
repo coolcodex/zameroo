@@ -7,6 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <style>
+
+.download-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border: 2px solid #3a8edb;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #3a8edb;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            margin: 15px;
+            border: 2px solid transparent;
+        }
+
+        .download-button:hover {
+            background: #2b6da3;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Update navbar styles */
+        .navbar ul li:last-child {
+            margin-left: auto; /* Pushes download to the right */
+        }
+        
         body {
     font-family: 'Norwester', sans-serif; /* Apply Norwester font to the whole body */
     margin: 0;
@@ -197,6 +230,7 @@ footer {
             <li class="right"><a class="active" href="homepage.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="download.html" class="download-button">Download App</a></li>
         </ul>
     </nav>
     <div class="content">
@@ -238,6 +272,15 @@ footer {
                 <h3>What kind of content can I expect?</h3>
                 <p>We offer in-depth reviews, guides, and the latest news on motorcycles, motorsports, and accessories to keep you informed and entertained.</p>
             </div>
+        </div>
+
+        <div class="download-section">
+            <h2>Get Our App</h2>
+            <p>Enhance your experience with our mobile application!</p>
+            <a href="download.html" class="download-button">
+                Download Now
+            </a>
+            <p>Available on iOS and Android</p>
         </div>
     </div>
     <footer>

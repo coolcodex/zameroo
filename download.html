@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="navbar2.css">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Zamero Motor App</title>
+    <style>
+        /* Existing styles */
+        .download-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('motorbike-bg.jpg');
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .platform-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        .platform-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* New styles */
+        #security-warning {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+            z-index: 1000;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        #security-warning button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .security-info {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="right"><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="download.html" class="active download-button">Download App</a></li>
+        </ul>
+    </nav>
+
+    <!-- Security Warning Modal -->
+    <div id="security-warning">
+        <h3>Security Notice</h3>
+        <p>For your safety:</p>
+        <ol>
+            <li>Ensure you trust this source</li>
+            <li>Enable 'Unknown Sources' in Settings > Security</li>
+            <li>Verify the checksum below matches your download</li>
+        </ol>
+        <button onclick="proceedInstall()">Continue Installation</button>
+        <button onclick="cancelInstall()">Cancel</button>
+    </div>
+
+    <div class="download-hero">
+        <h1>Get the Zamero Motor App</h1>
+        <p>Enhance your riding experience with our feature-packed mobile companion</p>
+    </div>
+
+    <div class="platform-card">
+        <h2>Android Version</h2>
+        <p>Compatible with Android 8.0 and above</p>
+        <!-- Changed link -->
+        <a href="zamero-app.apk" download="ZameroMotorApp.apk" class="download-button">
+            <img  alt="Install App" style="height: 50px;">
+        </a>
+        <p>APK Version 2.1.3 (68MB)</p>
+    </div>
+            
+          
+    <script>
+        // Android Installation Handler
+        document.getElementById('android-download').addEventListener('click', function(e) {
+            e.preventDefault();
+            showSecurityWarning();
+        });
+
+        function showSecurityWarning() {
+            document.getElementById('security-warning').style.display = 'block';
+        }
+
+        function proceedInstall() {
+            // Trigger actual download
+            window.location.href = document.getElementById('android-download').href;
+            document.getElementById('security-warning').style.display = 'none';
+            // Show installation instructions
+            document.getElementById('installation-instructions').style.display = 'block';
+            document.getElementById('installation-instructions').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function cancelInstall() {
+            document.getElementById('security-warning').style.display = 'none';
+        }
+
+        function verifyChecksum() {
+            alert("Verification feature requires file selection. Please download the APK first.");
+        }
+    </script>
+
+    <!-- Server Configuration Note -->
+    <!-- Create a .htaccess file with:
+    AddType application/vnd.android.package-archive apk
+    -->
+</body>
+</html>
